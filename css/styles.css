@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: black;
+  color: white;
+  mix-blend-mode: exclusion;
+}
+
+/* ===== HEADER SECTION ===== */
+
+header {
+  height: 8vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  color: white;
+  margin: 0 auto;
+  width: min(90vw, 1440px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font: 400 2rem/1.5 "Oswald";
+}
+
+nav p {
+  font: 400 1.5rem/1.5 "Oswald";
+}
+
+nav a {
+  color: #0aa7da;
+}
+
+/* ===== MAIN SECTION ====== */
+
+main {
+  color: white;
+  height: calc(92vh - 8vh);
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+form {
+  font: 200 2rem/1.5 "Oswald";
+  margin: 0 auto;
+  text-align: center;
+}
+
+#hex-color {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font: 200 2rem/1.5 "Oswald";
+  padding: 10px 5px;
+  margin: 10px 5px;
+  width: 125px;
+}
+
+#hex-color:focus {
+  outline: none;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 480px) {
+  nav h1 {
+    font: 400 1.5rem/1.5 "Oswald";
+  }
+
+  nav p {
+    font: 400 1rem/1.5 "Oswald";
+  }
+
+  form {
+    font: 200 1.5rem/1.5 "Oswald";
+  }
+
+  #hex-color {
+    font: 200 1.5rem/1.5 "Oswald";
+    width: 95px;
+  }
+}

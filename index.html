@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>Color Flipper</h1>
+        <p>Made by <a href="#">jvtz</a></p>
+      </nav>
+    </header>
+
+    <main>
+      <form id="form" action="" onsubmit="colorSubmitted();return false">
+        <label for="hex-color">Text a HEX code color: </label>
+        <input
+          type="text"
+          id="hex-color"
+          name="hex-color"
+          placeholder="#000000"
+          maxlength="7"
+          autocomplete="off"
+        />
+      </form>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
