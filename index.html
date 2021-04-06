@@ -24,17 +24,24 @@
     </header>
 
     <main>
-      <form id="form" action="" onsubmit="colorSubmitted();return false">
-        <label for="hex-color">Text a HEX code color: </label>
-        <input
-          type="text"
-          id="hex-color"
-          name="hex-color"
-          placeholder="#000000"
-          maxlength="7"
-          autocomplete="off"
-        />
-      </form>
+      <section id="form">
+        <form id="form" action="" onsubmit="colorSubmitted();return false">
+          <label for="hex-color">Text a HEX code color: </label>
+          <input
+            type="text"
+            id="hex-color"
+            name="hex-color"
+            value=""
+            placeholder="#000000"
+            maxlength="7"
+            autocomplete="off"
+          />
+        </form>
+      </section>
+
+      <section id="button">
+        <button class="btn" onclick="randomColor()">RANDOM</button>
+      </section>
     </main>
 
     <script src="js/index.js"></script>
